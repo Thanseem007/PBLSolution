@@ -2,6 +2,7 @@ from flask import Flask, render_template
 from data import schedule, scores, points_table, mvp_table
 from google.cloud import storage
 import csv
+import io
 
 app = Flask(__name__)
 
