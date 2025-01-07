@@ -5,9 +5,14 @@ import csv
 
 app = Flask(__name__)
 
-is_Cloud = False
+BUCKET_NAME = "pblbucket"
+SCORES_FILE ="Scores.csv"
+
+is_Cloud = True
 if is_Cloud :
    storage_client = storage.Client()
+
+
 
 @app.route("/")
 def index():
@@ -34,7 +39,7 @@ def GetScores():
     if is_Cloud :
        storage_client = storage.Client()
        bucket = storage_client.bucket(BUCKET_NAME)
-       blob = bucket.blob(LEADERBOARD_FILE)
+       blob = bucket.blob(SCORES_FILE)
         # Download the CSV data as a string
        csv_data = blob.download_as_text()
             # Parse the CSV data
