@@ -1,0 +1,181 @@
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;  /* Elegant, modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;  /* Soft Light Gray */
+    color: #2F4F4F;  /* Dark Slate Gray */
+}
+
+/* Header with logo */
+header {
+    background-color: #1A237E;  /* Deep Blue */
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.logo {
+    width: 280px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 15px 0;
+    font-size: 30px;
+    font-weight: 600;  /* Semi-bold for more emphasis */
+    letter-spacing: 1px;  /* Slightly increased letter spacing */
+}
+
+/* Navigation bar */
+nav {
+    background-color: #1ABC9C;  /* Turquoise Green */
+    padding: 12px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 500;  /* Slightly lighter text weight for links */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #FFB300;  /* Golden Yellow on hover */
+    transform: translateY(-3px);  /* Slightly lift the link on hover */
+}
+
+/* Active Link Styling */
+nav a.active {
+    background-color: #0D47A1;  /* Darker Blue for active links */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow for better focus */
+}
+
+/* Main content */
+main {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+main h2 {
+    color: #1A237E;  /* Deep Blue */
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #E3F2FD;  /* Soft Light Blue */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-weight: 400;  /* Normal weight for list items */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background-color: #FFFFFF;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #1A237E;  /* Deep Blue */
+    color: white;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background-color: #1A237E;  /* Deep Blue */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 400;  /* Slightly lighter text weight */
+}
+
+/* Responsive Design: Mobile View */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    main h2 {
+        font-size: 22px;
+    }
+
+    ul li {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+        margin: 5px 0;
+    }
+
+    main h2 {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Scores</h1>
+
+<div class="match-scores">
+    {% for match in matches %}
+        <div class="match">
+            <!-- Match Header, clickable to show/hide game scores -->
+            <h2 class="match-header" onclick="toggleScores('{{ match.team_1 }}-{{ match.team_2 }}')">
+                {{ match.team_1 }} vs {{ match.team_2 }} - <span style="color: brown;" class="match-type">{{ match.match_type }}</span>
+            </h2>
+
+            <!-- Scores List, initially hidden -->
+            <div class="game-scores" id="{{ match.team_1 }}-{{ match.team_2 }}" style="display: none;">
+                <ul>
+                    {% for game in match.games %}
+                        <li><strong>{{ game.type }}:</strong> {{ game.score }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+<style>.match-scores {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.match {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.match-header {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2980b9;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.match-header:hover {
+    background-color: #bdc3c7;
+}
+
+.game-scores {
+    padding-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+</style>
+<script>
+    // Function to toggle visibility of the game scores
+    function toggleScores(matchId) {
+        const scoresDiv = document.getElementById(matchId);
+        if (scoresDiv.style.display === "none") {
+            scoresDiv.style.display = "block";  // Show the scores
+        } else {
+            scoresDiv.style.display = "none";   // Hide the scores
+        }
+    }
+</script>
+{% endblock %}

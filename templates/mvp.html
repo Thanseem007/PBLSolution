@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>MVP Table</h1>
+<table>
+    <tr>
+        <th>Player</th>
+        <th>Team</th>
+        <th>Points</th>
+    </tr>
+    {% for player in mvp_table %}
+    <tr>
+        <td>{{ player.player }}</td>
+        <td>{{ player.team }}</td>
+        <td>{{ player.points }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
