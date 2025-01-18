@@ -16,7 +16,7 @@ is_Cloud = True
 #def index():
 #   return render_template("index.html", schedule=schedule)
 
-@app.route("/")
+@app.route("/Home")
 def home1_page():
     return render_template("Home1.html", Home1=Home1)
 
@@ -56,7 +56,7 @@ def schedule_page():
 def gallery_page():
     return render_template("gallery.html", gallery=gallery)
 
-@app.route("/sponsor")
+@app.route("/")
 def sponsor_page():
     return render_template("sponsor.html", sponsor=sponsor)
 
