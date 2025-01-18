@@ -2,11 +2,13 @@ from flask import Flask, render_template
 from data import schedule, scores, points_table, mvp_table, Home1, rules, teams, schedule, gallery, sponsor, mvp
 import csv
 import io
+from google.cloud import storage
 
 app = Flask(__name__)
 
 BUCKET_NAME = "pblbucket"
 SCORES_FILE ="Scores.csv"
+MVP_FILE = "Playerstat.csv"
 is_Cloud = True
 
 
@@ -64,7 +66,7 @@ def test():
     if is_Cloud :
         storage_client = storage.Client()
         bucket = storage_client.bucket(BUCKET_NAME)
-        blob = bucket.blob(SCORES_FILE)
+        blob = bucket.blob(MVP_FILE)
             # Download the CSV data as a string
         csv_data = blob.download_as_text()
                 # Parse the CSV data
