@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<html>
+<head>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  padding-bottom: 10px
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="gallery">
+  <a target="_blank" href="{{ url_for('static', filename='PBL3 Announcement.png') }}"">
+    <img src="{{ url_for('static', filename='PBL3 Announcement.png') }}" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Announcement</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank" href="{{ url_for('static', filename='PBL3 New Format.png') }}"">
+      <img src="{{ url_for('static', filename='PBL3 New Format.png') }}" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">New Format</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="{{ url_for('static', filename='PBL3 Registration.png') }}"">
+      <img src="{{ url_for('static', filename='PBL3 Registration.png') }}" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Registration</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="{{ url_for('static', filename='PBL3 Team & Captains.jpg') }}"">
+      <img src="{{ url_for('static', filename='PBL3 Team & Captains.jpg') }}" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Teams & Captains</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="{{ url_for('static', filename='PBL3 Auction.jpg') }}"">
+      <img src="{{ url_for('static', filename='PBL3 Auction.jpg') }}" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Auction</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="{{ url_for('static', filename='PBL3 Teams.jpg') }}"">
+      <img src="{{ url_for('static', filename='PBL3 Teams.jpg') }}" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Teams</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="{{ url_for('static', filename='PBL3 Schedule.png') }}"">
+      <img src="{{ url_for('static', filename='PBL3 Schedule.png') }}" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Schedule</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="{{ url_for('static', filename='PBL3 Late Entry.png') }}"">
+      <img src="{{ url_for('static', filename='PBL3 Late Entry.png') }}" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Late Entry</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="{{ url_for('static', filename='PBL3 Title Sponsor.png') }}"">
+      <img src="{{ url_for('static', filename='PBL3 Title Sponsor.png') }}" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Title Sponsor</div>
+  </div>
+</body>
+</html>
+
+{% endblock %}

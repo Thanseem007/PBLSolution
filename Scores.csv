@@ -1,3 +1,20 @@
-team_1,team_2,singlesKids_1_score,doubleKids_1_score,doubleKids_2_score,doubleKidsAdults_1_score,doubleKidsAdults_2_score,singlesmens_1_score,doublesmens_1_score,doublesmens_2_score,doublesmens_3_score,doublesmens_4_score,doubleswomens_1_score,doublesmixed_1_score,match_type
-Master Shuttlers,The Shuttle Force,"(21-10,15-21,21-10)",(21-10),(21-10),(21-10),(21-10),(21-10),(21-10),(21-10),(21-10),(21-10),(21-10),(21-10),League
-Rally of Rohirrim,Racquet Warriors,"(21-10,15-21,21-10)",(21-10),(21-10),(21-10),(21-10),(21-10),(21-10),(21-10),(21-10),(21-10),(21-10),(21-10),League
+team_1,team_2,singlesKids_1_score,doubleKids_1_score,doubleKids_2_score,doubleswomens_1_score,doubleKidsAdults_1_score,doublesmixed_1_score,doubleKidsAdults_2_score,singlesmens_1_score,doublesmens_1_score,doublesmens_2_score,doublesmens_3_score,doublesmens_4_score,match_type
+RoR,TSF,(RoR Trump) TBD vs TBD : 0-0,(TSF Trump) TBD vs TBD : 0-0,TBD vs TBD : 0-0,TBD vs TBD : 0-0,TBD vs TBD : 0-0,TBD vs TBD : 0-0,TBD vs TBD : 0-0,TBD vs TBD : 0-0,TBD vs TBD : 0-0,TBD vs TBD : 0-0,TBD vs TBD : 0-0,TBD vs TBD : 0-0,"Jan 25, 9 AM"
+MS,SS,,,,,,,,,,,,,"Jan 25, 11 AM"
+NN,RoR,,,,,,,,,,,,,"Jan 25, 3 PM"
+TSF,MS,,,,,,,,,,,,,"Jan 25, 5 Pm"
+RW,NN,,,,,,,,,,,,,"Jan 25, 7 PM"
+RoR,MS,,,,,,,,,,,,,"Jan 26, 7 AM"
+RW,SS,,,,,,,,,,,,,"Jan 26, 9 AM"
+NN,TSF,,,,,,,,,,,,,"Jan 26, 11 AM"
+RW,MS,,,,,,,,,,,,,"Jan 26, 3 PM"
+SS ,RoR,,,,,,,,,,,,,"Jan 26, 7 PM"
+MS,NN,,,,,,,,,,,,,"Feb 1, 9 AM"
+TSF,SS,,,,,,,,,,,,,"Feb 1, 11 AM"
+RW,RoR,,,,,,,,,,,,,"Feb 1, 3 PM"
+SS ,NN,,,,,,,,,,,,,"Feb 1, 5 Pm"
+RW,TSF,,,,,,,,,,,,,"Feb 1, 7 PM"
+TBD,TBD,,,,,,,,,,,,,"Semi's #1 : Feb 2, 9 AM"
+TBD,TBD,,,,,,,,,,,,,"Semi's #2 : Feb 2, 11.30 AM"
+TBD,TBD,,,,,,,,,,,,,"3rd Place : Feb 2, 3 PM"
+TBD,TBD,,,,,,,,,,,,,"Finals : Feb 2, 5.30 PM"

@@ -22,3 +22,38 @@ mvp_table = [
     {"player": "Player 1", "team": "Team A", "points": 50},
     {"player": "Player 2", "team": "Team C", "points": 40},
 ]
+
+Home1 = [
+    {"player": "Player 1", "team": "Team A", "points": 50},
+    {"player": "Player 2", "team": "Team C", "points": 40},
+]
+
+rules = [
+    {"player": "Player 1", "team": "Team A", "points": 50},
+    {"player": "Player 2", "team": "Team C", "points": 40},
+]
+
+teams = [
+    {"player": "Player 1", "team": "Team A", "points": 50},
+    {"player": "Player 2", "team": "Team C", "points": 40},
+]
+
+schedule = [
+    {"player": "Player 1", "team": "Team A", "points": 50},
+    {"player": "Player 2", "team": "Team C", "points": 40},
+]
+
+gallery = [
+    {"player": "Player 1", "team": "Team A", "points": 50},
+    {"player": "Player 2", "team": "Team C", "points": 40},
+]
+
+sponsor = [
+    {"player": "Player 1", "team": "Team A", "points": 50},
+    {"player": "Player 2", "team": "Team C", "points": 40},
+]
+
+mvp = [
+    {"player": "Player 1", "team": "Team A", "points": 50},
+    {"player": "Player 2", "team": "Team C", "points": 40},
+]

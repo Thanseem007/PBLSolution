@@ -1,19 +1,69 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>MVP Table</h1>
-<table>
-    <tr>
-        <th>Player</th>
-        <th>Team</th>
-        <th>Points</th>
-    </tr>
-    {% for player in mvp_table %}
-    <tr>
-        <td>{{ player.player }}</td>
-        <td>{{ player.team }}</td>
-        <td>{{ player.points }}</td>
-    </tr>
-    {% endfor %}
-</table>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            table {
+                width: 60%;
+                border-collapse: collapse;
+                margin: 20px auto;
+                font-family: Arial, sans-serif;
+                overflow-x: auto;
+                overflow-y; auto;
+                
+            } 
+            th, td {
+                border: 1px solid #ddd;
+                padding: 4px;
+                text-align: center;
+                overflow-x: auto;
+            } 
+            th {
+                background-color: #1A237E;  /* Deep Blue */
+                color: white;
+                font-weight: 600;
+                position: sticky;
+                top: 0
+            }
+
+            td {
+                color: rgb(25, 24, 24);
+            }
+         </style>
+    </head>
+    <body>
+        <div style="overflow-x:auto;">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width:15%;" >Team</th>
+                    <th style="width:5%;">Category</th>
+                    <th style="width:55%;">Name</th>
+                    <th style="width:5%;">Played</th>
+                    <th style="width:5%;">Won</th>
+                    <th style="width:5%;">Lost</th>
+                    <th style="width:5%;">Pts</th>
+                    <th style="width:5%;">PD</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in rows %}
+                    <tr>
+                        {% for cell in row %}
+                            <td>{{ cell }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+    </body>
+    </html>
+
+
 {% endblock %}

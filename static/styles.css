@@ -9,21 +9,25 @@ body {
 
 /* Header with logo */
 header {
-    background-color: #1A237E;  /* Deep Blue */
+    background-color: #000a5b;  /* Deep Blue */
     color: white;
     text-align: center;
-    padding: 30px 20px;
+    padding: 2px 0 1px 0;
 }
 
 .logo {
-    width: 280px;
-    height: auto;
+    width: 50%;
+    height: 20%;
     display: block;
     margin: 0 auto;
+    padding: 3px 3px 0 0;
+    Text-align: center;
 }
 
+
+
 header h1 {
-    margin: 15px 0;
+    margin: 10px 0;
     font-size: 30px;
     font-weight: 600;  /* Semi-bold for more emphasis */
     letter-spacing: 1px;  /* Slightly increased letter spacing */
@@ -32,7 +36,7 @@ header h1 {
 /* Navigation bar */
 nav {
     background-color: #1ABC9C;  /* Turquoise Green */
-    padding: 12px 0;
+    padding: 6px 0;
     text-align: center;
 }
 
@@ -60,9 +64,9 @@ nav a.active {
 
 /* Main content */
 main {
-    padding: 40px 20px;
+    padding: 0px 0 50px;
     max-width: 900px;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 
 main h2 {
@@ -77,6 +81,51 @@ ul {
     padding: 0;
 }
 
+.Bodylogo {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 8px 5px;
+    Text-align: center;
+}
+
+.Bodylogo1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 8px 0px;
+    Text-align: center;
+}
+
+.Bodylogo2 {
+    padding: 8px 0px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.Bodylogo3 {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: auto;
+    
+}
+
+.Bodylogo4 {
+    padding: 8px 0px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+    
+
+
 ul li {
     background-color: #E3F2FD;  /* Soft Light Blue */
     margin: 10px 0;
@@ -87,11 +136,13 @@ ul li {
     font-weight: 400;  /* Normal weight for list items */
 }
 
-/* Table Styling */
+/* Table Styling 
 table {
     width: 100%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    overflow-x: auto;
     border-collapse: collapse;
-    margin: 30px 0;
     background-color: #FFFFFF;
 }
 
@@ -105,34 +156,47 @@ th, td {
 }
 
 th {
-    background-color: #1A237E;  /* Deep Blue */
+    background-color: #1A237E;  /* Deep Blue 
     color: white;
     font-weight: 600;
-}
+    }
+*/
 
 /* Footer */
 footer {
-    background-color: #1A237E;  /* Deep Blue */
-    color: white;
+    background-color: #1ABC9C;  /* Turquoise Green */
     text-align: center;
-    padding: 15px 0;
-    margin-top: 30px;
-    font-size: 16px;
-    font-weight: 400;  /* Slightly lighter text weight */
+    position: fixed;
+    width: 100%;
+    height: 6%;
+    bottom: 0;
 }
 
-/* Responsive Design: Mobile View */
+.logo1 {
+    width: 60%;
+    text-align: center;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 3px 5px;
+}
+
+/* Responsive Design: Mobile View 
 @media (max-width: 768px) {
     header {
-        padding: 15px;
+        padding: 8px;
     }
 
     header h1 {
         font-size: 24px;
     }
 
-    nav {
-        padding: 10px;
+    footer {
+        position: fixed;
+        padding: 2px;
+        width: 100%;
+        height: 60px;
+        bottom: 0;
     }
 
     nav a {
@@ -141,7 +205,7 @@ footer {
     }
 
     main {
-        padding: 15px;
+        padding: 8px 8px 80px;
     }
 
     main h2 {
@@ -154,12 +218,38 @@ footer {
 
     table {
         font-size: 12px;
+        width: 75%
     }
 
     th, td {
         padding: 12px;
     }
+    .logo1 {
+        width: 400px;
+        padding: 6px;
+    }
+
+    .logo {
+        width: 400px;
+        padding: 0px;
+    }
+    .Bodylogo1 {
+        width: 400px;
+        padding: 8px, 8px;
+    }
+
+    .Bodylogo2 {
+        width: 380px;
+    }
+
+    .Bodylogo4 {
+        width: 400px;
+        padding: 8px, 8px;
+    }
+    
 }
+
+
 
 @media (max-width: 480px) {
     nav {
@@ -178,4 +268,10 @@ footer {
     main h2 {
         font-size: 18px;
     }
-}
+
+    .logo1 {
+        width: 400px;
+    }
+    
+} */
+

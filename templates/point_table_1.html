@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px auto;
+                font-family: Arial, sans-serif;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: center;
+            }
+            th {
+                background-color: #1A237E;  /*Deep Blue*/
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width:5%;" >Seed</th>
+                    <th style="width:20%;">Team</th>
+                    <th style="width:5%;">P</th>
+                    <th style="width:5%;">W</th>
+                    <th style="width:5%;">L</th>
+                    <th style="width:5%;">Pts</th>
+                    <th style="width:7%;">TP</th>
+                    <th style="width:7%;">TW</th>
+                    <th style="width:7%;">TL</th>
+                    <th style="width:7%;">+ T Pts</th>
+                    <th style="width:7%;">- T Pts</th>
+                    <th style="width:10%;">Tot Pts</th>
+                    <th style="width:10%;">Pts Diff</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in rows %}
+                    <tr>
+                        {% for cell in row %}
+                            <td>{{ cell }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <p style="text-align:center"> P - Played, W - Won, L - Lost, Pts - Points </P> 
+            <p style="text-align:center"> TP - Trump Played, TW - Trump Won, TL - Trump Lost, +T Pts : +Trump Points, -T Pts : - Trump Points</p>
+                <p style="text-align:center"> Tot Pts - Total Points, Pts Diff - Points Difference </p>
+    </body>
+    </html>
+
+
+
+{% endblock %}

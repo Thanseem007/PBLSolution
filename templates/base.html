@@ -8,16 +8,21 @@
 <body>
     <!-- Header -->
     <header>
-        <img src="{{ url_for('static', filename='PBL3Logo.jpg') }}" alt="Logo" class="logo">
+        <img align="Center" src="{{ url_for('static', filename='PBL3 Combo.png') }}" alt="Logo" class="logo">
         <h1></h1>
     </header>
-    
+
     <!-- Navigation Bar -->
     <nav>
         <a href="/">Home</a>
+        <a href="/rules">Rules</a>
+        <a href="/teams">Teams </a>
+        <a href="/schedule">Schedule</a>
         <a href="/scores">Scores</a>
-        <a href="/points_table">Points Table</a>
-        <a href="/mvp">MVP</a>
+        <a href="/points_table">Pts Table</a>
+        <a href="/mvp">Player Stat</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/sponsor">Sponsors</a>
     </nav>
 
     <!-- Main Content -->
@@ -25,6 +30,13 @@
         {% block content %}{% endblock %}
     </main>
 
+    <!-- Footer -->
+    <footer>
+        <nav>
+        <a href="/Home1"> Sports Committee, PCYFOWA </a>
+        </nav>
+    </footer>
+    
    
 </body>
 </html>
