@@ -78,7 +78,8 @@ def test():
         # Extract headers and rows
         headers = csv_reader.fieldnames
         rows = data
-
+        print("Headers:", headers)
+        print("Rows:", rows)
         return render_template("mvp.html", headers=headers, rows=rows)
 
     else: 
