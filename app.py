@@ -110,7 +110,7 @@ def GetScores():
        csv_data = blob.download_as_text()
             # Parse the CSV data
        csv_reader = csv.DictReader(io.StringIO(csv_data))
-       csv_reader.fieldnames = [header.strip().lower() for header in csv_reader.fieldnames]
+      # csv_reader.fieldnames = [header.strip().lower() for header in csv_reader.fieldnames]
        matches = []
        for row in csv_reader:
                 # Create a match dictionary to store match details
