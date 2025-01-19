@@ -8,7 +8,7 @@
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
-  float: left;
+  float: right;
   width: 180px;
   padding-bottom: 10px
 }
@@ -19,7 +19,7 @@ div.gallery:hover {
 
 div.gallery img {
   width: 100%;
-  height: auto;
+  height: 150px;
 }
 
 div.desc {
@@ -93,6 +93,20 @@ div.desc {
       <img src="{{ url_for('static', filename='PBL3 Title Sponsor.png') }}" alt="Cinque Terre" width="600" height="400">
     </a>
     <div class="desc">Title Sponsor</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="{{ url_for('static', filename='PBL3 Combo.png') }}"">
+      <img src="{{ url_for('static', filename='PBL3 Combo.png') }}" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">PBL3 Logo</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="{{ url_for('static', filename='Sports Committee.jpg') }}"">
+      <img src="{{ url_for('static', filename='Sports Committee.jpg') }}" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Sports Committee</div>
   </div>
 </body>
 </html>
