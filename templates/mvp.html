@@ -8,25 +8,29 @@
     <html>
     <head>
         <style>
-            table {
-                width: 60%;
+            .table-container {
+                width: 80%;
                 border-collapse: collapse;
                 margin: 20px auto;
                 font-family: Arial, sans-serif;
                 overflow-x: auto;
             } 
+            table {
+                border-collapse: collapse;
+                width: 60%;
+                min-width: 600px;
+            }
             th, td {
                 border: 1px solid #ddd;
                 padding: 4px;
                 text-align: center;
-                overflow-x: auto;
             } 
             th {
                 background-color: #1A237E;  /* Deep Blue */
                 color: white;
-                font-weight: 600;
                 position: sticky;
-                top: 0
+                top: 0;
+                z-index: 1;
             }
 
             td {
@@ -35,7 +39,7 @@
          </style>
     </head>
     <body>
-        <div style="overflow-x:auto;">
+        <div class="table-container">
         <table>
             <thead>
                 <tr>
@@ -45,8 +49,8 @@
                     <th style="width:5%;">Played</th>
                     <th style="width:5%;">Won</th>
                     <th style="width:5%;">Lost</th>
-                    <th style="width:5%;">Pts</th>
-                    <th style="width:5%;">PD</th>
+                    <th style="width:10%;">Pts</th>
+                    <th style="width:10%;">PD</th>
                 </tr>
             </thead>
             <tbody>
