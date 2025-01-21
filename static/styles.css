@@ -126,7 +126,13 @@ ul {
     margin: 0 auto;
 }
     
-
+.Bodylogo5 {
+    padding: 8px 0px;
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 ul li {
     background-color: #E3F2FD;  /* Soft Light Blue */
