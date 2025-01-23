@@ -84,7 +84,7 @@ ul {
 }
 
 .Bodylogo {
-    width: 50%;
+    width: 30%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -129,6 +129,14 @@ ul {
 .Bodylogo5 {
     padding: 8px 0px;
     width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.Bodylogo6 {
+    padding: 8px 0px;
+    width: 40%;
     height: auto;
     display: block;
     margin: 0 auto;
